@@ -4,3 +4,15 @@
 # - 7 -> да
 # - 1 -> нет
 
+def check_day(day):
+    if (0 < day < 6):
+        return  'нет'
+    elif (5 < day < 8):
+        return 'да'
+    else:
+        return 'такого дня недели не существует'
+
+print('Введите день недели: ')
+day = int(input())
+result = check_day(day)
+print(f'{day} -> {result}')
