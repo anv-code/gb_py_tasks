@@ -1,7 +1,7 @@
 # Напишите программу для. проверки истинности утверждения ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z для всех значений предикат
 
 def check_predicat(one, two, three):
-    return not(one or two or three) == (not one or not two or not three)
+    return not(one or two or three) == (not one and not two and not three)
 
 def print_result(predicat):
     result = check_predicat(predicat[0], predicat[1], predicat[2])
